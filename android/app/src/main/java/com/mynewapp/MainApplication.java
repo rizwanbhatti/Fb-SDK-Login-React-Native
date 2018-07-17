@@ -16,6 +16,8 @@ import com.facebook.appevents.AppEventsLogger;
 
 import com.airbnb.android.react.maps.MapsPackage;
 
+import com.imagepicker.ImagePickerPackage; // <-- add this import
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -38,8 +40,9 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
           new FBSDKPackage(mCallbackManager),
-          new MapsPackage()
-
+          new MapsPackage(),
+          new ImagePickerPackage()
+            
 
       );
     }

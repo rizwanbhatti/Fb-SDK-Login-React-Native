@@ -13,12 +13,8 @@ import {
 } from 'react-native';
 import Login from './component/facebook';
 import Map from './component/googlemap';
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import Camera from './component/Camera';
+
 
 
 export default class App extends Component {
@@ -27,6 +23,7 @@ export default class App extends Component {
       <View >
        <Login/>
        <Map/>
+       <Camera/>
       </View>
     );
   }
