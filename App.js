@@ -11,9 +11,11 @@ import {
   Text,
   View
 } from 'react-native';
-import Login from './component/facebook';
+import FbLogin from './component/facebook';
 import Map from './component/googlemap';
 import Camera from './component/Camera';
+import Login from './component/login';
+import Test from './component/test';
 
 
 
@@ -21,9 +23,11 @@ export default class App extends Component {
   render() {
     return (
       <View >
-       <Login/>
+        <Test/>
+       {/* <Login/>
+       <FbLogin/>
        <Map/>
-       <Camera/>
+       <Camera/> */}
       </View>
     );
   }

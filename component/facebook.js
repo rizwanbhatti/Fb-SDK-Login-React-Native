@@ -7,7 +7,7 @@ const {
   AccessToken
 } = FBSDK;
 
-export default class Login extends React.Component {
+export default class FbLogin extends React.Component {
     render() {
         return (
             <View>
