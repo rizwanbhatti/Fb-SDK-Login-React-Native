@@ -11,8 +11,8 @@ import {
   Text,
   View
 } from 'react-native';
-import Login from './component/facebook'
-
+import Login from './component/facebook';
+import Map from './component/googlemap';
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -26,6 +26,7 @@ export default class App extends Component {
     return (
       <View >
        <Login/>
+       <Map/>
       </View>
     );
   }

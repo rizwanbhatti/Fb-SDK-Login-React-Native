@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Alert, View } from 'react-native';
+import { StyleSheet, Alert, View ,Text} from 'react-native';
 
 const FBSDK = require('react-native-fbsdk');
 const {
@@ -11,6 +11,9 @@ export default class Login extends React.Component {
     render() {
         return (
             <View>
+              <Text>
+helo
+              </Text>
               <LoginButton
                 publishPermissions={["publish_actions"]}
                 onLoginFinished={
